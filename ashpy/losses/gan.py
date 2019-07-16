@@ -51,8 +51,10 @@ class GANExecutor(Executor, ABC):
 
         Args:
             context (:py:class:`ashpy.contexts.gan.GANContext`): context for GAN models
-            fake_or_real (:py:class:`tf.Tensor`): discriminator input tensor, it can be fake (generated) or real
-            condition (:py:class:`tf.Tensor`): discriminator condition (it can also be generator noise)
+            fake_or_real (:py:class:`tf.Tensor`): discriminator input tensor,
+                it can be fake (generated) or real
+            condition (:py:class:`tf.Tensor`): discriminator condition,
+                it can also be generator noise
             training (:py:class:`bool`): whether is training phase or not
 
         Returns:
@@ -183,6 +185,9 @@ class GeneratorL1(GANExecutor):
     """
 
     class L1Loss(tf.losses.Loss):
+        """
+        L1 Loss implementation as keras loss.
+        """
         def __init__(self):
             super().__init__()
             self._reduction = tf.losses.Reduction.SUM_OVER_BATCH_SIZE

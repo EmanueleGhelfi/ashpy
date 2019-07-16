@@ -83,7 +83,8 @@ class LocalEnhancer(keras.Model):
             initial_filters (int): number of initial filters
             filters_cap (int): maximum number of filters
             channels (int): number of channels
-            normalization_layer (:class:`tf.keras.layers.Layer`): layer of normalization (e.g. Instance Normalization or BatchNormalization or LayerNormalization)
+            normalization_layer (:class:`tf.keras.layers.Layer`): layer of normalization
+                (e.g. Instance Normalization or BatchNormalization or LayerNormalization)
             non_linearity (:class:`tf.keras.layers.Layer`): non linearity used in Pix2Pix HD
             num_resnet_blocks_global (int): number of residual blocks used in the global generator
             num_resnet_blocks_local (int): number of residual blocks used in the local generator
