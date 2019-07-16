@@ -387,10 +387,9 @@ class GlobalGenerator(Conv2DInterface):
         prev = inputs
         for layer in self.model_layers:
             prev = out
-            if (
-                isinstance(layer, ResNetBlock)
-                or isinstance(layer, keras.layers.BatchNormalization)
-                or isinstance(layer, keras.layers.Dropout)
+            if isinstance(
+                layer,
+                (ResNetBlock, keras.layers.BatchNormalization, keras.layers.Dropout),
             ):
                 out = layer(prev, training=training)
             else:

@@ -188,6 +188,7 @@ class GeneratorL1(GANExecutor):
         """
         L1 Loss implementation as keras loss.
         """
+
         def __init__(self):
             super().__init__()
             self._reduction = tf.losses.Reduction.SUM_OVER_BATCH_SIZE
