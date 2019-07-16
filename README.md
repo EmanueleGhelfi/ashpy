@@ -5,8 +5,8 @@
 ![PyPy - Version](https://badge.fury.io/py/ashpy.svg)
 ![PyPI - License](https://img.shields.io/pypi/l/ashpy.svg)
 ![Ashpy - Badge](https://img.shields.io/badge/package-ashpy-brightgreen.svg)
-[![codecov](https://codecov.io/gh/EmanueleGhelfi/ashpy/branch/travis-integration/graph/badge.svg)](https://codecov.io/gh/EmanueleGhelfi/ashpy)
-[![Build Status](https://travis-ci.org/EmanueleGhelfi/ashpy.svg?branch=master)](https://travis-ci.org/EmanueleGhelfi/ashpy)
+[![codecov](https://codecov.io/gh/zurutech/ashpy/branch/master/graph/badge.svg)](https://codecov.io/gh/zurutech/ashpy)
+[![Build Status](https://travis-ci.org/zurutech/ashpy.svg?branch=master)](https://travis-ci.org/zurutech/ashpy)
 
 AshPy is a TensorFlow 2.0 library for (**distributed**) training, evaluation, model selection, and fast prototyping.
 It is designed to ease the burden of setting up all the nuances of the architectures built to train complex custom deep learning models.
