@@ -1,8 +1,8 @@
 # Core packages
-tensorflow
-tfds-nightly
-opencv-python
-tensorflow-hub
+# uncomment the following line to install the gpu-version
+# tensorflow-gpu==2.0.0b1
+tensorflow==2.0.0b1
+tensorflow_hub
 
 # Code Style
 black
@@ -11,13 +11,6 @@ flake8
 isort
 rope
 mypy
-
-# Documentation
-sphinx
-sphinx-autobuild
-sphinx-rtd-theme
-pydocstyle
-doc8
 
 # Testing
 pytest
