@@ -49,6 +49,7 @@ jobs:
         secure: S6XvndLnBDs64vjouhjw1l5N1eAMrCfxZt64KnNdJnn481BBoaEzY/CNV5Bp4GqPi8T7vu+AY78yT1LPT5YNazya0ywo2p3KCeQSQpgzz3gTjLbsKA6q0YXiNeLtw9X5xmpV5RoqR06+zukf8Hs/gk6HGpvW2SKG9FhTTSLKzmR4G9VJaveb9vZ8FaoK8lpuRyEYbneM92artjVV9eCYUXXa/1fNJPRhGW+q/mShtCrL/2zEVDCCXZ8oY3KgW1zNXUoPKDtg+o20002FveYrUw/0AofTMQutz+tkyvsNed3mWctA+W2YFohF70OgdiyeN8UCWWPqNOAnvvOFsWH0KSBvDmR/YUaGzk59v7WYG677j2uwD5AdZSvAMJjVqJ3D+HoHPgGj5IWpj/Ncyn65/7uQNvG4oD6i7BDKeqGoCgXTK+8TqkdzIRQEemQ4kEmbHy5EoZdQwZBASWct+jtM2hTBkkZaOwbQgKk7I+Q5RXlzg8BoNZKZGtZSG5HM5JV4b6SUUDjE/JWukHh3V1hVtgtha9yefN4TwrZ8mG0ntfsr7aPwYvmNjUi0hcdgV+/IsmHdn/fsGUfzvr8aW20aG3FeGiKO8tPAzieIHDywDBZa+tKFck1Uvei5x/nK10pSEo0zFDC3p/HjBGnoB8+JPT/TeCWrfRQW5klsPiLZ3hU=
       on:
         tags: true
-        branch: /^r(0|[1-9]\d*)\.(0|[1-9]\d*)(-(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*)?(\+[0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*)?$/
+        branch:
+          - /^r(0|[1-9]\d*)\.(0|[1-9]\d*)(-(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*)?(\+[0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*)?$/
     # deploy only if the tag is a release tag (e.g. r0.0.1)
     if: tag =~ /^r(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(-(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(\.(0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*)?(\+[0-9a-zA-Z-]+(\.[0-9a-zA-Z-]+)*)?$/
